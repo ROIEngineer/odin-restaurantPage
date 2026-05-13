@@ -1,5 +1,13 @@
 // src/index.js
 import "./styles.css";
-import { greeting } from "./greeting.js";
+import homepage from "./homepage.js";
 
-console.log(greeting);
+document.addEventListener("DOMContentLoaded", function() {
+  homepage();
+});
+
+
+/*
+Add a event listener
+
+*/
