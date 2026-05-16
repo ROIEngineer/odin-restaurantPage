@@ -1,20 +1,28 @@
 export default function loadMenu() {
   const content = document.getElementById("content");
 
-  const menuDiv = document.createElement("div");
+  const page = document.createElement("div");
+  page.classList.add("page");
 
   const heading = document.createElement("h1");
   heading.textContent = "Menu";
 
-  const item1 = document.createElement("p");
-  item1.textContent = "Burger - $10";
+  const burger = document.createElement("div");
+  burger.classList.add("menu-item");
+  burger.textContent = "Classic Burger — $10";
 
-  const item2 = document.createElement("p");
-  item2.textContent = "Pizza - $15";
+  const pizza = document.createElement("div");
+  pizza.classList.add("menu-item");
+  pizza.textContent = "Wood Fired Pizza — $15";
 
-  menuDiv.appendChild(heading);
-  menuDiv.appendChild(item1);
-  menuDiv.appendChild(item2);
+  const pasta = document.createElement("div");
+  pasta.classList.add("menu-item");
+  pasta.textContent = "Creamy Alfredo Pasta — $13";
 
-  content.appendChild(menuDiv);
+  page.appendChild(heading);
+  page.appendChild(burger);
+  page.appendChild(pizza);
+  page.appendChild(pasta);
+
+  content.appendChild(page);
 }

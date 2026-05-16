@@ -1,17 +1,18 @@
 export default function loadHome() {
   const content = document.getElementById("content");
 
-  const homeDiv = document.createElement("div");
+  const page = document.createElement("div");
+  page.classList.add("page");
 
   const heading = document.createElement("h1");
-  heading.textContent = "Welcome to Odin Restaurant";
+  heading.textContent = "Odin Restaurant";
 
   const paragraph = document.createElement("p");
   paragraph.textContent =
-    "The best food in town made with fresh ingredients.";
+    "Experience incredible food made fresh every day.";
 
-  homeDiv.appendChild(heading);
-  homeDiv.appendChild(paragraph);
+  page.appendChild(heading);
+  page.appendChild(paragraph);
 
-  content.appendChild(homeDiv);
+  content.appendChild(page);
 }
